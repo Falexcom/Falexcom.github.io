@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background: #222;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.gallery-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 250px;
+    flex: 1 1 auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+}
+
+.gallery-item p {
+    padding: 10px;
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+footer {
+    text-align: center;
+    background: #222;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
